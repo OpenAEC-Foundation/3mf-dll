@@ -1,0 +1,23 @@
+[workspace]
+resolver = "2"
+members = ["crates/threemf-model", "crates/threemf-read"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "LGPL-3.0-or-later"
+repository = "https://github.com/OpenAEC-Foundation/3mf-dll"
+publish = false
+
+[workspace.dependencies]
+threemf-model = { path = "crates/threemf-model" }
+# the package (MIT)
+zip = { version = "9", default-features = false, features = ["deflate-flate2"] }
+# the deflate of the package in pure Rust, also for the browser (MIT OR Apache-2.0)
+flate2 = { version = "1", default-features = false, features = ["rust_backend"] }
+# the model parts (MIT OR Apache-2.0)
+roxmltree = "0.20"
+# placements (MIT OR Apache-2.0)
+glam = "0.30"
+# the texture images (MIT OR Apache-2.0)
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
