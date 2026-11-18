@@ -13,6 +13,7 @@ zip.workspace = true
 flate2.workspace = true
 roxmltree.workspace = true
 glam.workspace = true
+image.workspace = true
 
 [dev-dependencies]
 zip = { version = "9", default-features = false, features = ["deflate-flate2"] }

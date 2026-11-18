@@ -19,3 +19,5 @@ flate2 = { version = "1", default-features = false, features = ["rust_backend"] 
 roxmltree = "0.20"
 # placements (MIT OR Apache-2.0)
 glam = "0.30"
+# the texture images (MIT OR Apache-2.0)
+image = { version = "0.25", default-features = false, features = ["png", "jpeg"] }
