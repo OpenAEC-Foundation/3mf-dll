@@ -1,0 +1,10 @@
+[package]
+name = "threemf-model"
+description = "The plain model the 3MF reader returns: placed, coloured triangle meshes"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+publish.workspace = true
+
+[dependencies]
